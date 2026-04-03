@@ -3,7 +3,6 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Luminary — Business",
-  description: "Luminary partners with ambitious companies to build brands, systems, and strategies that stand the test of time.",
 };
 
 export default function RootLayout({
