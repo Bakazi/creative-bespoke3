@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Mono } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "@/components/ui/toaster";
 
 const cormorantGaramond = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -46,9 +45,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${cormorantGaramond.variable} ${dmMono.variable}`}>
+      <body className={`${cormorantGaramond.variable} ${dmMono.variable} luminary-body`}>
         {children}
-        <Toaster />
       </body>
     </html>
   );
